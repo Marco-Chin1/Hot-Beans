@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-<div class="index">
+
 <head>
   <meta charset="utf-8">
   <title>Home</title>
@@ -13,7 +13,7 @@
     <h1>Hot Beans Web website development</h1>
     <p>Hot Beans is a web development company focused on creating great websites for clients across a wide range of industries. We work with small and medium businesses to bring their online visions to life using the latest technologies and best practices in web design and development.</p>
   </header>
-
+  <div class="index">
   <main>
     <div class="section-container">
       <div class="section" id="about-us">
@@ -36,7 +36,7 @@
 
     <div id="clock"></div>
   </main>
-
+  </div>
   <script>
     fetch('plug-in/navbar.html')
       .then(response => response.text())
@@ -49,5 +49,4 @@
       .catch(error => console.error('Link to clock:', error));
   </script>
 </body>
-</div>
 </html>
