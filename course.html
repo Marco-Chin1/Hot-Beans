@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-<div class="course">
 <head>
   <meta charset="utf-8">
   <title>Online courses</title>
@@ -12,12 +11,12 @@
   <header>
 
   </header>
-
+  <div class="course">
   <main>
 
     <div id="clock"></div>
   </main>
-
+  </div>
   <script>
     fetch('plug-in/navbar.html')
       .then(response => response.text())
@@ -30,5 +29,4 @@
       .catch(error => console.error('Link to clock:', error));
   </script>
 </body>
-</div>
 </html>
