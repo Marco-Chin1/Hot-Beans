@@ -1,14 +1,14 @@
-
 <div class="top-bar">
-  <div class="menu-button" onclick="toggleMenu()">☰ Menu</div>
-  <div class="logo">OneDrive Clone</div>
+  <div class="menu-button" onclick="toggleMenu()">☰</div>
+  <div class="logo">Hot Beans</div>
 </div>
 
 <div class="side-menu" id="sideMenu">
-  <a href="#">My Files</a>
-  <a href="#">Recent</a>
-  <a href="#">Shared</a>
-  <a href="#">Recycle Bin</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="course.html">Online Courses</a>
+  <a href="jobs.html">Statt Profiles</a>
+  <a href="application.html">Application Form</a>
 </div>
 
 <script>
@@ -18,7 +18,6 @@
     menu.classList.toggle('open');
   }
 
-  // 當用戶撳咗 menu 以外嘅地方，就收起選單
   document.addEventListener('click', function(event) {
     const isClickInsideMenu = menu.contains(event.target);
     const isClickOnButton = event.target.classList.contains('menu-button');
