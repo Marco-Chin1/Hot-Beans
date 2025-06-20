@@ -1,18 +1,18 @@
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
+    color: #003366;
 }
 
 #navbar {
-    background-color: #2b2b2b;
+    background-color: #0055aa;
     color: white;
     padding: 10px 20px;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #007BFF;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -41,7 +41,7 @@ main {
 
 .section {
     width: 45%;
-    background-color: white;
+    background-color: #e6f0ff;
     margin: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -51,20 +51,21 @@ main {
 
 .section-image {
     height: 30%;
-    background-color: #ccc; /* Placeholder for image */
+    background-color: #cce0ff;
 }
 
 .section-text {
     padding: 20px;
     font-size: 1.2em;
     text-align: center;
+    color: #003366;
 }
 
 #clock {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #222;
+    background-color: #003366;
     color: #fff;
     padding: 8px 14px;
     border-radius: 8px;
