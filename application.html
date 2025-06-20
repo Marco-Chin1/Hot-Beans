@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Application form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <header>
+
+  </header>
+
+  <main>
+
+    <div id="clock"></div>
+  </main>
+
+  <script>
+    fetch('plug-in/navbar.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('navbar').innerHTML = data)
+      .catch(error => console.error('Link to navbar:', error));
+
+    fetch('plug-in/clock.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('clock').innerHTML = data)
+      .catch(error => console.error('Link to clock:', error));
+  </script>
+</body>
+</html>
