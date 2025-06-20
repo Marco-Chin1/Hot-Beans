@@ -1,0 +1,30 @@
+
+<div class="top-bar">
+  <div class="menu-button" onclick="toggleMenu()">☰ Menu</div>
+  <div class="logo">OneDrive Clone</div>
+</div>
+
+<div class="side-menu" id="sideMenu">
+  <a href="#">My Files</a>
+  <a href="#">Recent</a>
+  <a href="#">Shared</a>
+  <a href="#">Recycle Bin</a>
+</div>
+
+<script>
+  const menu = document.getElementById('sideMenu');
+
+  function toggleMenu() {
+    menu.classList.toggle('open');
+  }
+
+  // 當用戶撳咗 menu 以外嘅地方，就收起選單
+  document.addEventListener('click', function(event) {
+    const isClickInsideMenu = menu.contains(event.target);
+    const isClickOnButton = event.target.classList.contains('menu-button');
+
+    if (!isClickInsideMenu && !isClickOnButton) {
+      menu.classList.remove('open');
+    }
+  });
+</script>

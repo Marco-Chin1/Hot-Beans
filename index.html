@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <header>
+    <h1>Hot Beans Web website development</h1>
+    <p>Hot Beans is a web development company focused on creating great websites for clients across a wide range of industries. We work with small and medium businesses to bring their online visions to life using the latest technologies and best practices in web design and development.</p>
+  </header>
+
+  <main>
+    <div class="section-container">
+      <div class="section" id="about-us">
+        <div class="section-image"></div>
+        <div class="section-text">About Us</div>
+      </div>
+      <div class="section" id="online-courses">
+        <div class="section-image"></div>
+        <div class="section-text">Online Courses</div>
+      </div>
+      <div class="section" id="staff-profiles">
+        <div class="section-image"></div>
+        <div class="section-text">Staff Profiles</div>
+      </div>
+      <div class="section" id="application-form">
+        <div class="section-image"></div>
+        <div class="section-text">Application Form</div>
+      </div>
+    </div>
+
+    <div id="clock"></div>
+  </main>
+
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('navbar').innerHTML = data)
+      .catch(error => console.error('Link to navbar:', error));
+
+    fetch('clock.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('clock').innerHTML = data)
+      .catch(error => console.error('Link to clock:', error));
+  </script>
+</body>
+</html>

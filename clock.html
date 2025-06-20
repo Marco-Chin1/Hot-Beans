@@ -1,0 +1,32 @@
+<!-- Clock Container -->
+<div id="floating-clock"></div>
+
+<style>
+  #floating-clock {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #222;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 14px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 9999;
+  }
+</style>
+
+<script>
+  function updateClock() {
+    const clock = document.getElementById('floating-clock');
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+    clock.textContent = `${hours}:${minutes}:${seconds}`;
+  }
+
+  setInterval(updateClock, 1000);
+  updateClock(); // initial call
+</script>
