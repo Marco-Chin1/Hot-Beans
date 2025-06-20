@@ -37,12 +37,12 @@
   </main>
 
   <script>
-    fetch('navbar.html')
+    fetch('plug-in/navbar.html')
       .then(response => response.text())
       .then(data => document.getElementById('navbar').innerHTML = data)
       .catch(error => console.error('Link to navbar:', error));
 
-    fetch('clock.html')
+    fetch('plug-in/clock.html')
       .then(response => response.text())
       .then(data => document.getElementById('clock').innerHTML = data)
       .catch(error => console.error('Link to clock:', error));
