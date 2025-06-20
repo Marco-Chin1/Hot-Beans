@@ -79,14 +79,14 @@ main {
     padding: 20px;
 }
 
-.section-container {
+.index .section-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 20px;
 }
 
-.section {
+.index .section {
     width: 45%;
     background-color: #e6f0ff;
     margin: 10px;
@@ -96,12 +96,12 @@ main {
     animation: fadeIn 1s ease-in-out;
 }
 
-.section-image {
+.index .section-image {
     height: 30%;
     background-color: #cce0ff;
 }
 
-.section-text {
+.index .section-text {
     padding: 20px;
     font-size: 1.2em;
     text-align: center;
