@@ -11,6 +11,53 @@ body {
     padding: 10px 20px;
 }
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.top-bar {
+    background-color: #2b2b2b;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -20vw;
+    width: 20vw;
+    height: 100vh;
+    background-color: #444;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    transition: left 0.3s ease;
+    z-index: 1000;
+    padding-top: 60px;
+}
+
+.side-menu.open {
+    left: 0;
+}
+
+.side-menu a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.side-menu a:hover {
+    background-color: #555;
+}
+
 header {
     background-color: #007BFF;
     color: white;
