@@ -6,23 +6,27 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="navbar"></div>
+  <div id="sideMenuPluginContainer" data-logo="Hot Beans" data-menu-items='[
+    {"text":"Home", "href":"index.html"},
+    {"text":"About Us", "href":"about.html"},
+    {"text":"Online Courses", "href":"course.html"},
+    {"text":"Staff Profiles", "href":"jobs.html"},
+    {"text":"Application Form", "href":"application.html"}
+  ]'></div>
 
   <header>
 
   </header>
   <div class="about">
-  <main>
+    <main>
 
-    <div id="clock"></div>
-  </main>
+      <div id="clock"></div>
+    </main>
   </div>
+  
+  <script src="plug-in/sidemenu.js"></script>
+  
   <script>
-    fetch('plug-in/navbar.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('navbar').innerHTML = data)
-      .catch(error => console.error('Link to navbar:', error));
-
     fetch('plug-in/clock.html')
       .then(response => response.text())
       .then(data => document.getElementById('clock').innerHTML = data)
