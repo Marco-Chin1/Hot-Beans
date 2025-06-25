@@ -83,7 +83,7 @@ main {
 
 .index .section-text {
     padding: 4%;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
     text-align: center;
     color: #003366;
 }
@@ -95,7 +95,7 @@ main {
     margin-bottom: 2%;
     border-radius: 1vw;
     box-shadow: 0 0 1vw rgba(0,0,0,0.1);
-    overflow: visible; 
+    overflow: visible;
     animation: fadeIn 1s ease-in-out;
     min-width: 280px;
 }
