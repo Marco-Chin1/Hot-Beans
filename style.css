@@ -81,24 +81,23 @@ main {
     padding: 3%;
 }
 
-.index .section-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2%;
-  margin-top: 3%;
+.index .section-text {
+    padding: 4%;
+    font-size: 1.2vw;
+    text-align: center;
+    color: #003366;
 }
 
 .index .section {
-  flex: 1 1 calc(33.33% - 2%);
-  box-sizing: border-box;
-  background-color: #e6f0ff;
-  margin-bottom: 2%;
-  border-radius: 1vw;
-  box-shadow: 0 0 1vw rgba(0,0,0,0.1);
-  overflow: hidden;
-  animation: fadeIn 1s ease-in-out;
-  min-width: 280px;
+    flex: 1 1 calc(33.33% - 2%);
+    box-sizing: border-box;
+    background-color: #e6f0ff;
+    margin-bottom: 2%;
+    border-radius: 1vw;
+    box-shadow: 0 0 1vw rgba(0,0,0,0.1);
+    overflow: visible; 
+    animation: fadeIn 1s ease-in-out;
+    min-width: 280px;
 }
 
 @media (max-width: 1024px) {
