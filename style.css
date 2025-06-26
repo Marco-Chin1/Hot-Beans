@@ -131,22 +131,6 @@ main {
     word-break: break-word;
 }
 
-#clock {
-    position: fixed;
-    bottom: 4%;
-    right: 4%;
-    background-color: #003366;
-    color: #ffffff;
-    padding: 0.8em 1.2em;
-    border-radius: 12px;
-    font-family: monospace, monospace;
-    font-size: 1.4rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    z-index: 9999;
-    user-select: none;
-    white-space: nowrap;
-}
-
 @keyframes fadeIn {
     from {
         opacity: 0;
