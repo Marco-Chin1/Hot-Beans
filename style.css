@@ -183,3 +183,15 @@ main {
         transform: translateY(0);
     }
 }
+
+/* Added for team photo on staff page */
+.team-photo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.team-photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
