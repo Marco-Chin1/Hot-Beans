@@ -1,4 +1,4 @@
-body {
+body { 
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #ffffff;
@@ -84,35 +84,65 @@ main {
 .index .section-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2%;
-    margin-top: 3%;
+    gap: 1rem;
+    justify-content: flex-start;
 }
 
 .index .section {
-    flex: 1 1 calc(33.33% - 2%);
+    flex-grow: 1;
     box-sizing: border-box;
     background-color: #e6f0ff;
-    margin-bottom: 2%;
+    margin-bottom: 1rem;
     border-radius: 1vw;
     box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
     overflow: auto;
     animation: fadeIn 1s ease-in-out;
-    min-width: 280px;
+    min-width: 150px;
     max-height: 320px;
     display: flex;
     flex-direction: column;
+    flex-basis: 100%;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 480px) {
     .index .section {
-        flex: 1 1 calc(48% - 2%);
+        flex-basis: calc(50% - 1rem);
     }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 768px) {
     .index .section {
-        flex: 1 1 100%;
+        flex-basis: calc(33.33% - 1rem);
+    }
+}
+
+@media (min-width: 992px) {
+    .index .section {
+        flex-basis: calc(25% - 1rem);
+    }
+}
+
+@media (min-width: 1200px) {
+    .index .section {
+        flex-basis: calc(20% - 1rem);
+    }
+}
+
+@media (min-width: 1400px) {
+    .index .section {
+        flex-basis: calc(16.66% - 1rem);
+    }
+}
+
+@media (min-width: 1600px) {
+    .index .section {
+        flex-basis: calc(14.28% - 1rem);
+    }
+}
+
+@media (min-width: 1800px) {
+    .index .section {
+        flex-basis: calc(12.5% - 1rem);
     }
 }
 
@@ -132,15 +162,15 @@ main {
 }
 
 .employee {
-  margin-bottom: 30px;
-  text-align: center;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .employee img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 @keyframes fadeIn {
