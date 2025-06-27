@@ -97,8 +97,8 @@ main {
     box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
     overflow: auto;
     animation: fadeIn 1s ease-in-out;
-    min-width: 250px;
-    max-height: 450px;
+    min-width: 150px;
+    max-height: 320px;
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
@@ -106,43 +106,43 @@ main {
 
 @media (min-width: 480px) {
     .index .section {
-        flex-basis: calc(60% - 1rem);
+        flex-basis: calc(50% - 1rem);
     }
 }
 
 @media (min-width: 768px) {
     .index .section {
-        flex-basis: calc(50% - 1rem);
+        flex-basis: calc(33.33% - 1rem);
     }
 }
 
 @media (min-width: 992px) {
     .index .section {
-        flex-basis: calc(33.33% - 1rem);
+        flex-basis: calc(25% - 1rem);
     }
 }
 
 @media (min-width: 1200px) {
     .index .section {
-        flex-basis: calc(25% - 1rem);
+        flex-basis: calc(20% - 1rem);
     }
 }
 
 @media (min-width: 1400px) {
     .index .section {
-        flex-basis: calc(20% - 1rem);
+        flex-basis: calc(16.66% - 1rem);
     }
 }
 
 @media (min-width: 1600px) {
     .index .section {
-        flex-basis: calc(16.66% - 1rem);
+        flex-basis: calc(14.28% - 1rem);
     }
 }
 
 @media (min-width: 1800px) {
     .index .section {
-        flex-basis: calc(14.28% - 1rem);
+        flex-basis: calc(12.5% - 1rem);
     }
 }
 
@@ -194,38 +194,143 @@ main {
     height: auto;
     border-radius: 10px;
 }
-.about {
+
+.jobs-page body,
+.jobs-page {
+}
+
+.jobs-page header {
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 3% 5%;
+  border-radius: 0 0 2vw 2vw;
+  box-shadow: 0 0 2vw rgba(0, 0, 0, 0.1);
+}
+
+.jobs-page header h2 {
+  font-size: 4vw;
+  margin-bottom: 1vh;
+  font-weight: 700;
+}
+
+.jobs-page header p {
+  font-size: 1.8vw;
+  line-height: 1.6;
+  max-width: 80vw;
+  margin: 0.8vh auto 1.5vh auto;
+}
+
+.jobs-page .team-photo {
+  margin: 3vh auto;
+  text-align: center;
+}
+
+.jobs-page .team-photo img {
+  max-width: 90vw;
+  height: auto;
+  border-radius: 2vw;
+  box-shadow: 0 0 1.5vw rgba(0, 123, 255, 0.3);
+}
+
+.jobs-page .jobs main {
+  max-width: 95vw;
+  margin: 3vh auto 5vh auto;
+  padding: 0 3%;
+}
+
+.jobs-page .jobs main h2 {
+  font-size: 3.5vw;
+  color: #0056b3;
+  margin-bottom: 2vh;
+  text-align: center;
+  font-weight: 700;
+}
+
+.jobs-page .employee {
+  background-color: #e6f0ff;
+  border-radius: 2vw;
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+  padding: 2vh 3%;
+  margin-bottom: 3vh;
+  max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.jobs-page .employee:hover {
+  transform: translateY(-0.5vh);
+  box-shadow: 0 0 1.5vw rgba(0, 123, 255, 0.4);
+}
+
+.jobs-page .employee img {
+  width: 20vw;
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5vh;
+}
+
+.jobs-page .employee h3 {
+  font-size: 2.2vw;
+  color: #003366;
+  margin-bottom: 1vh;
+  font-weight: 600;
+}
+
+.jobs-page .employee p {
+  font-size: 1.4vw;
+  color: #003366;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 80vw;
+}
+
+.jobs-page #clock {
+  text-align: center;
+  font-size: 1.8vw;
+  color: #007BFF;
+  margin-top: 5vh;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .jobs-page header h2 {
+    font-size: 6vw;
+  }
+
+  .jobs-page header p {
+    font-size: 3.5vw;
     max-width: 90vw;
-    margin: 2% auto 4% auto;
-    padding: 2% 3%;
-    background-color: #f0f7ff;
-    border-radius: 2vw;
-    box-shadow: 0 0 1vw rgba(0, 51, 102, 0.15);
-    color: #003366;
-    font-size: 1.15vw;
-    line-height: 1.6;
-}
+  }
 
-.about main p {
-    margin-bottom: 1.5vh;
-}
+  .jobs-page .jobs main h2 {
+    font-size: 5vw;
+  }
 
-header h1 {
-    text-align: center;
+  .jobs-page .employee {
+    padding: 4vh 4%;
+  }
+
+  .jobs-page .employee img {
+    width: 30vw;
+    max-width: none;
+  }
+
+  .jobs-page .employee h3 {
+    font-size: 4vw;
+  }
+
+  .jobs-page .employee p {
     font-size: 3vw;
-    margin: 2% 0 2.5% 0;
-    color: #0056b3;
-    font-weight: 700;
-}
+    max-width: 90vw;
+  }
 
-@media (max-width: 600px) {
-    .about {
-        padding: 2% 4%;
-        font-size: 3vw;
-    }
-
-    header h1 {
-        font-size: 5vw;
-        margin: 3% 0 4% 0;
-    }
+  .jobs-page #clock {
+    font-size: 3vw;
+  }
 }
