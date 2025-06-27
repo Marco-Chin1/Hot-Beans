@@ -131,6 +131,18 @@ main {
     word-break: break-word;
 }
 
+.employee {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.employee img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
