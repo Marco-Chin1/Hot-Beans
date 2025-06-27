@@ -184,7 +184,6 @@ main {
     }
 }
 
-/* Added for team photo on staff page */
 .team-photo {
     text-align: center;
     margin: 20px 0;
@@ -194,4 +193,92 @@ main {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+.application main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.job-description {
+  background-color: #e6f0ff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  color: #003366;
+}
+
+.job-description h2,
+.job-description h3,
+.job-description h4 {
+  margin-top: 0;
+}
+
+.job-description ul {
+  margin-left: 20px;
+  margin-bottom: 1rem;
+}
+
+.application-form {
+  background-color: #f5f9ff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 51, 102, 0.15);
+}
+
+.application-form h2 {
+  color: #003366;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.application-form form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+  color: #003366;
+}
+
+.application-form form input[type="text"],
+.application-form form input[type="email"],
+.application-form form input[type="tel"],
+.application-form form input[type="url"],
+.application-form form textarea,
+.application-form form input[type="file"] {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.application-form form textarea {
+  min-height: 100px;
+}
+
+.application-form form button {
+  background-color: #007BFF;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.application-form form button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .application main {
+    padding: 1rem 10px;
+  }
 }
