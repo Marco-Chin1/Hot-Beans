@@ -1,8 +1,8 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>About us</title>
+  <title>About Us</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,17 +15,45 @@
   ]'></div>
 
   <header>
-
+    <h1>About Us</h1>
   </header>
+
   <div class="about">
     <main>
+      <h2>Our Story</h2>
+      <p>Established in 2007, Hot Beans started out as a small company run by a few close friends in the hope to showcase our talent of website design. Now as well-known developers, Hot Beans are still providing the highest quality service as we could when we began our journey. From the beginning, we based our brand around the key ideas we would want around the center of a company.</p>
+      <p>We strive to uphold these on a daily basis.</p>
 
-      <div id="clock"></div>
+      <h2>Meet the Team</h2>
+
+      <div class="employee">
+        <img src="anna-lloyd.jpg" alt="Anna Lloyd">
+        <h3>Anna Lloyd - CEO & Founder</h3>
+        <p>Anna's love for her job is the reason we are all here. She wasn't enjoying her previous employer and wanted a way to be more creative with what she did. Thus, she started Hot Beans; a way for her to be her own boss, provide great quality work for clients, and enjoy doing it.</p>
+      </div>
+
+      <div class="employee">
+        <img src="john-connor.jpg" alt="John Connor">
+        <h3>John Connor - Client Liaison</h3>
+        <p>John has worked with us for 5+ years now. As a client liaison, he spends his time here providing contact for each client, assigning developers, and providing support.</p>
+      </div>
+
+      <div class="employee">
+        <img src="daisy-richards.jpg" alt="Daisy Richards">
+        <h3>Daisy Richards - Web Developer</h3>
+        <p>The web developer role is possibly one of the most important jobs here at Hot Beans. Daisy is a star example of a perfect web dev. To date, Daisy has never missed a client deadline and always comes into the office smiling!</p>
+      </div>
+
+      <div class="employee">
+        <img src="samael-morningstar.jpg" alt="Samael Morningstar">
+        <h3>Samael Morningstar - Senior Web Designer</h3>
+        <p>Sam came to Hot Beans from a small company in LA. He was looking for a career change and found he loved the idea of working as a web developer. Using our provided courses to enhance his skills, he climbed up the ladder of our company and recently acquired his senior title.</p>
+      </div>
+
     </main>
   </div>
-  
+
   <script src="plug-in/sidemenu.js"></script>
-  
   <script>
     fetch('plug-in/clock.html')
       .then(response => response.text())
