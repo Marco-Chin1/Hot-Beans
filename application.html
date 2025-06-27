@@ -15,12 +15,69 @@
   ]'></div>
 
   <header>
-
   </header>
+
   <div class="application">
     <main>
 
       <div id="clock"></div>
+
+      <section class="job-description">
+        <h2>Available Positions</h2>
+        <h3>Web Developer</h3>
+        <p>Your primary task as a web developer will be to create reliable and high-performing applications and services, which can be accessed over the internet. Focusing solely on the underlying software and databases (known as the 'back end') is most common, however some web developers work on the interface and visual design for us (the 'front end'), we also employ others who combine both ('full-stack development').</p>
+
+        <h4>Your responsibilities in the role:</h4>
+        <ul>
+          <li>Write code in one or more programming or scripting languages, such as PHP or JavaScript</li>
+          <li>Plan and prototype new applications</li>
+          <li>Design the architecture of the components of an application</li>
+          <li>Build and test Application Program Interfaces (APIs) for applications to exchange data</li>
+          <li>Stay up to date with new trends and advancements in web development build and maintain databases</li>
+          <li>Meet designers, developers and project staff for progress updates</li>
+        </ul>
+
+        <p>You'll typically work normal office hours, 9am to 5pm, Monday to Friday. However as previously stated we are flexible and allow for personal work hours if needed. And work can be completed from the comfort of your own home if preferred (you will be required to attend faculty meetings in person from time to time.)</p>
+
+        <p>There is no formal qualification needed to become a web developer in the UK, though some employers prefer applicants to have a technical degree. Relevant subjects include:</p>
+        <ul>
+          <li>Computer science</li>
+          <li>Informatics</li>
+          <li>Software engineering</li>
+          <li>Web design and development</li>
+        </ul>
+
+        <p>Knowledge and experience are usually the most important requirements. A relevant degree can provide you with demonstrable knowledge, particularly the fundamental principles of programming and application design.</p>
+      </section>
+
+      <section class="application-form">
+        <h2>Apply for Web Developer Position</h2>
+        <form action="submit_application.php" method="POST" enctype="multipart/form-data">
+          <label for="fullname">Full Name<span style="color: red;">*</span>:</label><br>
+          <input type="text" id="fullname" name="fullname" required><br><br>
+
+          <label for="email">Email<span style="color: red;">*</span>:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="phone">Phone Number:</label><br>
+          <input type="tel" id="phone" name="phone"><br><br>
+
+          <label for="portfolio">Portfolio or Website URL:</label><br>
+          <input type="url" id="portfolio" name="portfolio"><br><br>
+
+          <label for="experience">Brief Description of Your Experience<span style="color: red;">*</span>:</label><br>
+          <textarea id="experience" name="experience" rows="5" required></textarea><br><br>
+
+          <label for="qualifications">Relevant Qualifications:</label><br>
+          <input type="text" id="qualifications" name="qualifications"><br><br>
+
+          <label for="cv">Upload CV / Resume<span style="color: red;">*</span>:</label><br>
+          <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required><br><br>
+
+          <button type="submit">Submit Application</button>
+        </form>
+      </section>
+
     </main>
   </div>
   
