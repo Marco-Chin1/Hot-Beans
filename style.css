@@ -194,3 +194,38 @@ main {
     height: auto;
     border-radius: 10px;
 }
+.about {
+    max-width: 90vw;
+    margin: 2% auto 4% auto;
+    padding: 2% 3%;
+    background-color: #f0f7ff;
+    border-radius: 2vw;
+    box-shadow: 0 0 1vw rgba(0, 51, 102, 0.15);
+    color: #003366;
+    font-size: 1.15vw;
+    line-height: 1.6;
+}
+
+.about main p {
+    margin-bottom: 1.5vh;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 3vw;
+    margin: 2% 0 2.5% 0;
+    color: #0056b3;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .about {
+        padding: 2% 4%;
+        font-size: 3vw;
+    }
+
+    header h1 {
+        font-size: 5vw;
+        margin: 3% 0 4% 0;
+    }
+}
