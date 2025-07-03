@@ -4,6 +4,12 @@
   --primary-color: #007BFF;
   --section-bg: #e6f0ff;
   --highlight: #cce0ff;
+
+  --jobs-header-color: #003366;
+  --employee-name-color: #007BFF;
+  --form-border-color: #007BFF;
+  --form-button-bg: #007BFF;
+  --form-button-hover-bg: #0056b3;
 }
 
 body {
@@ -20,6 +26,12 @@ body.red-theme {
   --primary-color: #cc0000;
   --section-bg: #ffe6e6;
   --highlight: #ffcccc;
+
+  --jobs-header-color: #660000;
+  --employee-name-color: #cc0000;
+  --form-border-color: #cc0000;
+  --form-button-bg: #cc0000;
+  --form-button-hover-bg: #990000;
 }
 
 .top-bar {
@@ -182,8 +194,6 @@ main {
   }
 }
 
-/* 👇 Your additional job page & application page styles 👇 */
-
 .employee {
   margin-bottom: 3vh;
   text-align: center;
@@ -192,7 +202,7 @@ main {
 .jobs-page header h2 {
   font-size: 4vw;
   margin-bottom: 2vh;
-  color: #003366;
+  color: var(--jobs-header-color);
 }
 
 .jobs-page header p {
@@ -200,7 +210,7 @@ main {
   margin: 0 auto 2vh;
   font-size: 1.7vw;
   line-height: 1.5;
-  color: #003366;
+  color: var(--jobs-header-color);
 }
 
 .jobs-page .team-photo {
@@ -228,14 +238,14 @@ main {
 .jobs-page .employee h3 {
   font-size: 2.2vw;
   margin: 1vh 0;
-  color: #007BFF;
+  color: var(--employee-name-color);
 }
 
 .jobs-page .employee p {
   font-size: 1.6vw;
   max-width: 70vw;
   margin: 0 auto 3vh;
-  color: #003366;
+  color: var(--jobs-header-color);
   line-height: 1.4;
 }
 
@@ -248,13 +258,13 @@ main {
   max-width: 90vw;
   margin: 2vh auto 5vh;
   padding: 0 3vw;
-  color: #003366;
+  color: var(--jobs-header-color);
   line-height: 1.5;
 }
 
 .application-page #clock {
   font-size: 1.4vw;
-  color: #007BFF;
+  color: var(--employee-name-color);
   text-align: right;
   margin-bottom: 2vh;
   font-weight: bold;
@@ -267,9 +277,9 @@ main {
 .application-page .job-description h2,
 .application-page .application-form h2 {
   font-size: 3vw;
-  color: #007BFF;
+  color: var(--employee-name-color);
   margin-bottom: 2vh;
-  border-bottom: 0.3vw solid #007BFF;
+  border-bottom: 0.3vw solid var(--employee-name-color);
   padding-bottom: 1vh;
 }
 
@@ -291,6 +301,7 @@ main {
   font-size: 1.7vw;
   max-width: 80vw;
   margin: 1vh 0;
+  color: var(--jobs-header-color);
 }
 
 .application-page .job-description ul {
@@ -316,7 +327,7 @@ main {
   font-weight: 600;
   display: block;
   margin-bottom: 0.8vh;
-  color: #003366;
+  color: var(--jobs-header-color);
 }
 
 .application-page .application-form input[type="text"],
@@ -328,7 +339,7 @@ main {
   width: 100%;
   padding: 1.2vh 1vw;
   font-size: 1.5vw;
-  border: 0.15vw solid #007BFF;
+  border: 0.15vw solid var(--form-border-color);
   border-radius: 0.7vw;
   box-sizing: border-box;
   margin-bottom: 2vh;
@@ -347,7 +358,7 @@ main {
 }
 
 .application-page .application-form button {
-  background-color: #007BFF;
+  background-color: var(--form-button-bg);
   color: white;
   font-size: 1.8vw;
   padding: 1.5vh 3vw;
@@ -363,7 +374,7 @@ main {
 }
 
 .application-page .application-form button:hover {
-  background-color: #0056b3;
+  background-color: var(--form-button-hover-bg);
 }
 
 @media (max-width: 600px) {
