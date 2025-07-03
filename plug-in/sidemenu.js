@@ -24,7 +24,7 @@
 
   const themeButton = document.createElement('button');
   themeButton.className = 'theme-toggle-button';
-  themeButton.textContent = '🌗';
+  themeButton.textContent = 'Colour Switch';
   themeButton.style.marginLeft = 'auto';
   themeButton.setAttribute('aria-label', 'Toggle theme');
 
