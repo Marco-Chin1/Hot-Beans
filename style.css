@@ -181,3 +181,206 @@ main {
     transform: translateY(0);
   }
 }
+
+/* 👇 Your additional job page & application page styles 👇 */
+
+.employee {
+  margin-bottom: 3vh;
+  text-align: center;
+}
+
+.jobs-page header h2 {
+  font-size: 4vw;
+  margin-bottom: 2vh;
+  color: #003366;
+}
+
+.jobs-page header p {
+  max-width: 70vw;
+  margin: 0 auto 2vh;
+  font-size: 1.7vw;
+  line-height: 1.5;
+  color: #003366;
+}
+
+.jobs-page .team-photo {
+  text-align: center;
+  margin: 3vh 0;
+}
+
+.jobs-page .team-photo img {
+  max-width: 80vw;
+  height: auto;
+  border-radius: 1vw;
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+}
+
+.jobs-page .employee img {
+  width: 30vw;
+  max-width: 250px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5vh;
+}
+
+.jobs-page .employee h3 {
+  font-size: 2.2vw;
+  margin: 1vh 0;
+  color: #007BFF;
+}
+
+.jobs-page .employee p {
+  font-size: 1.6vw;
+  max-width: 70vw;
+  margin: 0 auto 3vh;
+  color: #003366;
+  line-height: 1.4;
+}
+
+.jobs-page main {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.application-page main {
+  max-width: 90vw;
+  margin: 2vh auto 5vh;
+  padding: 0 3vw;
+  color: #003366;
+  line-height: 1.5;
+}
+
+.application-page #clock {
+  font-size: 1.4vw;
+  color: #007BFF;
+  text-align: right;
+  margin-bottom: 2vh;
+  font-weight: bold;
+}
+
+.application-page section {
+  margin-bottom: 5vh;
+}
+
+.application-page .job-description h2,
+.application-page .application-form h2 {
+  font-size: 3vw;
+  color: #007BFF;
+  margin-bottom: 2vh;
+  border-bottom: 0.3vw solid #007BFF;
+  padding-bottom: 1vh;
+}
+
+.application-page .job-description h3 {
+  font-size: 2.5vw;
+  margin-bottom: 1vh;
+  color: #004080;
+}
+
+.application-page .job-description h4 {
+  font-size: 1.8vw;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+  color: #0059b3;
+}
+
+.application-page .job-description p,
+.application-page .job-description ul {
+  font-size: 1.7vw;
+  max-width: 80vw;
+  margin: 1vh 0;
+}
+
+.application-page .job-description ul {
+  padding-left: 3vw;
+  list-style-type: disc;
+}
+
+.application-page .job-description ul li {
+  margin-bottom: 0.8vh;
+}
+
+.application-page .application-form form {
+  max-width: 80vw;
+  margin: 0 auto;
+  background: #f7faff;
+  border-radius: 1vw;
+  padding: 3vw;
+  box-shadow: 0 0 2vw rgba(0, 123, 255, 0.15);
+}
+
+.application-page .application-form label {
+  font-size: 1.6vw;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.8vh;
+  color: #003366;
+}
+
+.application-page .application-form input[type="text"],
+.application-page .application-form input[type="email"],
+.application-page .application-form input[type="tel"],
+.application-page .application-form input[type="url"],
+.application-page .application-form input[type="file"],
+.application-page .application-form textarea {
+  width: 100%;
+  padding: 1.2vh 1vw;
+  font-size: 1.5vw;
+  border: 0.15vw solid #007BFF;
+  border-radius: 0.7vw;
+  box-sizing: border-box;
+  margin-bottom: 2vh;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.application-page .application-form input[type="text"]:focus,
+.application-page .application-form input[type="email"]:focus,
+.application-page .application-form input[type="tel"]:focus,
+.application-page .application-form input[type="url"]:focus,
+.application-page .application-form input[type="file"]:focus,
+.application-page .application-form textarea:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+.application-page .application-form button {
+  background-color: #007BFF;
+  color: white;
+  font-size: 1.8vw;
+  padding: 1.5vh 3vw;
+  border: none;
+  border-radius: 1vw;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 2vh auto 0;
+  width: 50%;
+  min-width: 150px;
+}
+
+.application-page .application-form button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .application-page main {
+    padding: 0 5vw;
+  }
+
+  .application-page .job-description p,
+  .application-page .job-description ul,
+  .application-page .application-form label,
+  .application-page .application-form input,
+  .application-page .application-form textarea,
+  .application-page .application-form button {
+    font-size: 4vw;
+  }
+
+  .application-page .application-form button {
+    width: 100%;
+  }
+}
