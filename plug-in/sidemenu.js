@@ -22,8 +22,21 @@
   logo.className = 'logo';
   logo.textContent = logoText;
 
+  const themeButton = document.createElement('button');
+  themeButton.className = 'theme-toggle-button';
+  themeButton.textContent = '🌗';
+  themeButton.style.marginLeft = 'auto';
+  themeButton.setAttribute('aria-label', 'Toggle theme');
+
+  themeButton.addEventListener('click', () => {
+    document.body.classList.toggle('red-theme');
+    const isRed = document.body.classList.contains('red-theme');
+    localStorage.setItem('theme', isRed ? 'red' : 'blue');
+  });
+
   topBar.appendChild(menuButton);
   topBar.appendChild(logo);
+  topBar.appendChild(themeButton);
 
   const sideMenu = document.createElement('nav');
   sideMenu.className = 'side-menu';
@@ -45,11 +58,16 @@
 
   document.addEventListener('click', (event) => {
     const clickedInsideMenu = sideMenu.contains(event.target);
-    const clickedOnButton = menuButton.contains(event.target);
-
+    const clickedOnButton = menuButton.contains(event.target) || themeButton.contains(event.target);
     if (!clickedInsideMenu && !clickedOnButton) {
       sideMenu.classList.remove('open');
     }
   });
-})();
 
+  window.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'red') {
+      document.body.classList.add('red-theme');
+    }
+  });
+})();
